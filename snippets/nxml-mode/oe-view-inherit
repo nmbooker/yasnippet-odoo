@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: oe-view-inherit
+# key: oe-view-inherit
+# binding: direct-keybinding
+# --
+<record id="$2" model="ir.ui.view">
+    <field name="name">$3.inherit.$4</field>
+    <field name="inherit_id" ref="$1.$2"/>
+    <field name="arch" type="xml">
+        $0
+    </field>
+</record>
