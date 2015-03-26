@@ -3,9 +3,9 @@
 # key: oe-view-inherit
 # binding: direct-keybinding
 # --
-<record id="$2" model="ir.ui.view">
-    <field name="name">$3.inherit.$4</field>
-    <field name="inherit_id" ref="$1.$2"/>
+<record id="$2_$4" model="ir.ui.view">
+    <field name="name">${3:parent_name}.inherit.${4:description_of_alterations}</field>
+    <field name="inherit_id" ref="${1:parent_module}.${2:parent_xmlid}"/>
     <field name="arch" type="xml">
         $0
     </field>

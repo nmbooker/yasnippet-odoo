@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: oe-vf
+# key: oe-vf
+# binding: direct-keybinding
+# --
+<field name="$1"$2/>
+$0
